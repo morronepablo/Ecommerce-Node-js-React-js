@@ -1,10 +1,18 @@
 import React, { useState } from "react";
+import ReactStars from "react-rating-stars-component";
 import BrandCrumb from "../components/BrandCrumb";
 import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
-import ReactStars from "react-rating-stars-component";
+import ReactImageZoom from "react-image-zoom";
 
 const SingleProduct = () => {
+  const props = {
+    width: 400,
+    height: 500,
+    zoomWidth: 500,
+    img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+  };
+
   const [orderedProduct, setOrderedProduct] = useState(true);
   return (
     <>
@@ -13,7 +21,13 @@ const SingleProduct = () => {
       <div className="main-product-wrapper home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-6"></div>
+            <div className="col-6">
+              <div className="main-product-image">
+                <div>
+                  <ReactImageZoom {...props} />
+                </div>
+              </div>
+            </div>
             <div className="col-6"></div>
           </div>
         </div>
