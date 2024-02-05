@@ -7,10 +7,10 @@ import ReactImageZoom from "react-image-zoom";
 
 const SingleProduct = () => {
   const props = {
-    width: 400,
+    width: 600,
     height: 500,
     zoomWidth: 500,
-    img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg",
   };
 
   const [orderedProduct, setOrderedProduct] = useState(true);
@@ -27,8 +27,49 @@ const SingleProduct = () => {
                   <ReactImageZoom {...props} />
                 </div>
               </div>
+              <div className="other-product-images d-flex flex-wrap gap-15">
+                <div>
+                  <img
+                    src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                    alt=""
+                    className="img-fluid"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                    alt=""
+                    className="img-fluid"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                    alt=""
+                    className="img-fluid"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
+                    alt=""
+                    className="img-fluid"
+                  />
+                </div>
+              </div>
             </div>
-            <div className="col-6"></div>
+            <div className="col-6">
+              <div className="main-product-details">
+                <div className="border-bottom">
+                  <h3 className="title">
+                    Kids Headphones Bulk 10 Pack Multi Colored For Students
+                  </h3>
+                </div>
+                <div className="border-bottom">
+                  <p className="price">$ 100.00</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
